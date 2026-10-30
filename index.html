@@ -4,130 +4,139 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HIP Engineering</title>
-  <meta name="description" content="HIP Engineering — site în lucru. Website under construction.">
-  <meta name="robots" content="noindex">
+  <meta name="description" content="HIP Engineering — consultanță în energie, consultanță și automatizări AI, cursuri AI, web development, proiecte de fibră optică și telecomunicații.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f3d5e'/%3E%3Cpath d='M18 4 9 18h6l-2 10 9-14h-6z' fill='%23f5b301'/%3E%3C/svg%3E">
-  <style>
-    :root {
-      --bg: #f6f7f9;
-      --fg: #14202b;
-      --muted: #5b6b7a;
-      --accent: #f5b301;
-      --brand: #0f3d5e;
-      --line: #d9dee4;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0d151c;
-        --fg: #e8edf2;
-        --muted: #8fa1b2;
-        --brand: #7fb8e0;
-        --line: #22303c;
-      }
-    }
-    * { box-sizing: border-box; margin: 0; }
-    html, body { height: 100%; }
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-      display: flex;
-      flex-direction: column;
-      line-height: 1.5;
-    }
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 720px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 48px 20px;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 700;
-      font-size: 1.25rem;
-      letter-spacing: 0.02em;
-      color: var(--brand);
-      margin-bottom: 56px;
-    }
-    .logo svg { width: 36px; height: 36px; flex: none; }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      align-self: flex-start;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 4px 12px;
-      margin-bottom: 20px;
-    }
-    .badge::before {
-      content: "";
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
-      animation: pulse 1.6s ease-in-out infinite;
-    }
-    @keyframes pulse { 50% { opacity: 0.3; } }
-    @media (prefers-reduced-motion: reduce) { .badge::before { animation: none; } }
-    h1 {
-      font-size: clamp(2rem, 6vw, 3.25rem);
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      margin-bottom: 16px;
-    }
-    .lead { font-size: 1.125rem; color: var(--muted); max-width: 56ch; }
-    .en { margin-top: 12px; font-size: 0.95rem; color: var(--muted); font-style: italic; }
-    .progress {
-      margin-top: 40px;
-      height: 4px;
-      background: var(--line);
-      border-radius: 2px;
-      overflow: hidden;
-    }
-    .progress span {
-      display: block;
-      height: 100%;
-      width: 35%;
-      background: var(--accent);
-      border-radius: 2px;
-    }
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 20px;
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=block">
+  <link rel="stylesheet" href="style.css">
+  <link rel="alternate" hreflang="ro" href="https://hipengineering.com/">
+  <link rel="alternate" hreflang="en" href="https://hipengineering.com/en/">
 </head>
 <body>
-  <main>
-    <div class="logo">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#0f3d5e"/><path d="M18 4 9 18h6l-2 10 9-14h-6z" fill="#f5b301"/></svg>
-      HIP Engineering
+  <header class="app-bar">
+    <div class="container">
+      <a class="brand" href="#">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#0f3d5e"/><path d="M18 4 9 18h6l-2 10 9-14h-6z" fill="#f5b301"/></svg>
+        HIP Engineering
+      </a>
+      <div class="bar-actions">
+        <nav aria-label="Navigare">
+          <a href="#servicii">Servicii</a>
+          <a href="#proiecte">Proiecte</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="lang-btn" href="en/index.html" hreflang="en" lang="en" title="English version"><span class="icon" aria-hidden="true">translate</span>EN</a>
+      </div>
     </div>
+  </header>
 
-    <span class="badge">În lucru</span>
-    <h1>Site-ul nostru nou este în construcție.</h1>
-    <p class="lead">Lucrăm la o prezentare completă a serviciilor noastre de inginerie. Revenim în curând.</p>
-    <p class="en">Our new website is under construction. Please check back soon.</p>
+  <main>
+    <section class="intro">
+      <div class="container">
+        <h1>Inginerie, energie și inteligență artificială</h1>
+        <p>HIP Engineering oferă consultanță în energie, soluții și instruire în inteligență artificială, dezvoltare web și proiectare de rețele de fibră optică și telecomunicații.</p>
+        <div class="actions">
+          <a class="btn btn-filled" href="#contact"><span class="icon" aria-hidden="true">mail</span>Contactați-ne</a>
+          <a class="btn btn-outlined" href="#servicii">Serviciile noastre</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="progress" role="presentation"><span></span></div>
+    <section id="servicii">
+      <div class="container">
+        <h2>Servicii</h2>
+        <p class="section-sub">Ce facem pentru clienții noștri.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="icon-box"><span class="icon" aria-hidden="true">bolt</span></div>
+            <h3>Consultanță în energie</h3>
+            <p>Analiză și suport tehnic pentru operatori și companii din sectorul energetic: piețe de energie și flexibilitate, platforme de gestionare a rețelei, documentații de licitație.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon-box"><span class="icon" aria-hidden="true">psychology</span></div>
+            <h3>Inteligență artificială</h3>
+            <ul>
+              <li><span class="icon" aria-hidden="true">check</span>Consultanță AI — identificarea proceselor unde AI aduce valoare reală</li>
+              <li><span class="icon" aria-hidden="true">check</span>Automatizări AI — fluxuri de lucru pentru documente, date și rapoarte</li>
+              <li><span class="icon" aria-hidden="true">check</span>Cursuri AI pentru elevi și adolescenți</li>
+              <li><span class="icon" aria-hidden="true">check</span>Cursuri AI pentru profesori</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon-box"><span class="icon" aria-hidden="true">code</span></div>
+            <h3>Web development</h3>
+            <p>Site-uri de prezentare și aplicații web, de la concept până la publicare și găzduire.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon-box"><span class="icon" aria-hidden="true">cable</span></div>
+            <h3>Fibră optică și telecomunicații</h3>
+            <p>Proiecte pentru rețele de fibră optică și infrastructură de telecomunicații: planuri de situație, trasee și documentație tehnică.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proiecte">
+      <div class="container">
+        <h2>Proiecte</h2>
+        <p class="section-sub">O selecție din activitatea noastră recentă.</p>
+        <div class="grid">
+          <article class="card-outlined">
+            <span class="chip">Energie</span>
+            <h3>Evaluarea platformelor pentru piața de flexibilitate</h3>
+            <p>Analiza soluțiilor pentru tranzacționarea produselor de flexibilitate și maparea lor pe cerințele unui operator de transport.</p>
+          </article>
+          <article class="card-outlined">
+            <span class="chip">Energie</span>
+            <h3>Platformă de gestionare a congestiilor</h3>
+            <p>Analiza specificațiilor tehnice și pregătirea propunerii tehnice pentru o platformă de management al congestiilor în rețea.</p>
+          </article>
+          <article class="card-outlined">
+            <span class="chip">AI</span>
+            <h3>Program de AI onboarding pentru proiectare energetică</h3>
+            <p>Program practic în mai multe sesiuni prin care o echipă de proiectanți învață să automatizeze extragerea și compararea datelor din oferte, liste de echipamente și memorii tehnice.</p>
+          </article>
+          <article class="card-outlined">
+            <span class="chip">Educație</span>
+            <h3>Navigarea inteligenței artificiale</h3>
+            <p>Prezentări și materiale interactive despre cum funcționează AI-ul și cum îl folosim responsabil, pentru părinți, educatori și adolescenți.</p>
+          </article>
+          <article class="card-outlined">
+            <span class="chip">Telecom</span>
+            <h3>Proiectare rețea de fibră optică</h3>
+            <p>Planuri de situație și detalii de execuție pentru rețele de fibră optică.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section-sub">Scrieți-ne sau sunați-ne.</p>
+        <div class="grid">
+          <div class="card contact-card">
+            <div class="person">Marius Marian</div>
+            <a class="contact-row" href="mailto:marius.marian@hipengineering.com"><span class="icon" aria-hidden="true">mail</span><span>marius.marian@hipengineering.com</span></a>
+            <a class="contact-row" href="tel:+40774281532"><span class="icon" aria-hidden="true">call</span><span>+40 774 281 532</span></a>
+          </div>
+          <div class="card contact-card">
+            <div class="person">Marius Buciuta</div>
+            <a class="contact-row" href="mailto:marius.buciuta@hipengineering.com"><span class="icon" aria-hidden="true">mail</span><span>marius.buciuta@hipengineering.com</span></a>
+            <a class="contact-row" href="tel:+40744441278"><span class="icon" aria-hidden="true">call</span><span>+40 744 441 278</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    &copy; <span id="year">2026</span> HIP Engineering
+    <div class="container">&copy; <span id="year">2026</span> HIP Engineering</div>
   </footer>
 
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
